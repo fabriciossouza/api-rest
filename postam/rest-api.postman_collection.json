@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "5f8a2eeb-f16d-46a1-9d98-2c10796406a0",
+		"name": "rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "marca",
+			"item": [
+				{
+					"name": "GET marcas - Obter todas as marcas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/marks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET marcas - Obter uma marca por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/marks/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks",
+								"2001"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Obter todos os patrimônios de uma marca",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/marks/2001/patrimonies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks",
+								"2001",
+								"patrimonies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST marca - Inserir uma nova marca",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"MARCA NOVA\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rs/marks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT marca - Alterar os dados de uma marca",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"MARCA ALTERADA\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rs/marks/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks",
+								"2001"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE marca - Excluir uma marca",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/marks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"marks",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "GET usuarios – Listar os usuários",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST usuarios – Criar um usuário",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"jose\",\n\t\"email\": \"jose@gmail.com\",\n\t\"password\": \"jose\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rs/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE usuários – Excluir um usuário",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDUxNjMzLCJpYXQiOjE1OTA0MTU2MzN9.IqUXWAnyB_yFUpzeETG-WFrEbHlieforSGjx_McjCjM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"users",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "patrimonio",
+			"item": [
+				{
+					"name": "GET - Patrimonio",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDU0MDYwLCJpYXQiOjE1OTA0MTgwNjB9.w5m-Fc5CyF2u25t8biFxYdV3lPzrTuJjKXq1xnylOWY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/patrimonies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"patrimonies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET patrimonios - Obter um patrimônio por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDU0MDYwLCJpYXQiOjE1OTA0MTgwNjB9.w5m-Fc5CyF2u25t8biFxYdV3lPzrTuJjKXq1xnylOWY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/patrimonies/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"patrimonies",
+								"1001"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE patrimonios - Excluir um patrimônio",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDU0MDYwLCJpYXQiOjE1OTA0MTgwNjB9.w5m-Fc5CyF2u25t8biFxYdV3lPzrTuJjKXq1xnylOWY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/rs/patrimonies/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"patrimonies",
+								"1001"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST patrimonios - Inserir um novo patrimônio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDU0MDYwLCJpYXQiOjE1OTA0MTgwNjB9.w5m-Fc5CyF2u25t8biFxYdV3lPzrTuJjKXq1xnylOWY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Patrimonio 1\",\n\t\"description\": \"Patriminio Description\",\n\t\"mark\": {\n\t\t\"id\": 2001\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rs/patrimonies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"patrimonies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT patrimonios - Alterar os dados de um patrimônio",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTkwNDU0MDYwLCJpYXQiOjE1OTA0MTgwNjB9.w5m-Fc5CyF2u25t8biFxYdV3lPzrTuJjKXq1xnylOWY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Patrimonio Alterado\",\n\t\"description\": \"Patriminio Description Alterado\",\n\t\"mark\": {\n\t\t\"id\": 2002\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rs/patrimonies/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rs",
+								"patrimonies",
+								"1001"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GET - Token (Authentication)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\": \"user\",\"password\": \"user\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
